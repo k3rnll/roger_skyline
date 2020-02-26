@@ -1,0 +1,400 @@
+<head>
+    <meta charset="utf-8">
+    <title>Roger_SkyLine</title>
+</head>
+<body>
+   
+    <header>
+		<span class="madGlow keyPhrase" id="randomPhrase">
+			<script>
+				var quotes = [
+					"Пуще Брежнева",
+					"Аоъаоъаоъаэщбъоаэъщдб",
+					"Алъксандр Друз больше не отвечае",
+					"Хобот",
+					"Обеспокойся популяцией тушкана",
+					"Ещё ъжслое, чем раньше",
+					"Кислотне пяни",
+					"Вздръжне",
+					"Дай вълю свъему пънъсу",
+					"Воруй Убивай"
+				];
+				var index = Math.floor((Math.random() * quotes.length)); 
+				document.getElementById('randomPhrase').innerHTML = quotes[index];
+
+			</script> 
+		</span>
+    </header>
+    <div class="huiCot" id="cot1"><img src="https://upyachka.io/img/kot/14.gif"></div>
+    <div class="huiCot" id="cot2"><img src="https://upyachka.io/img/kot/14.gif"></div>
+    <div class="huiCot" id="cot3"><img src="https://upyachka.io/img/kot/14.gif"></div>
+    <div class="huiCot" id="cot4"><img src="https://upyachka.io/img/kot/14.gif"></div>
+    <div class="centerText">
+		<span id="main">
+			Roger Landing Page
+		</span>
+    </div>
+</body>
+<style>
+    body {
+        min-width: 100vw;
+        max-width: 100vw;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://otvet.imgsmail.ru/download/732b6267ec2b2f55cb33fe31c282729d_h-27.jpg);
+        background-position: center;
+    }
+	header{
+		position: absolute;
+		top: 100px;
+	}
+	div.centerText{
+		position: absolute;
+        top:40%;
+	}
+    .huiCot {
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        margin: auto;
+        height: 100px;
+        width: 100px;
+
+    }
+	span.madGlow {
+        animation-name: epileptic;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+	}
+	.keyPhrase {
+		font-size: 6vw;
+		font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+	}
+    #cot1 {
+        animation-name: popa_cota1;
+    }
+    #cot2 {
+        animation-name: popa_cota2;
+    }
+    #cot3 {
+        animation-name: popa_cota3;
+    }
+    #cot4 {
+        animation-name: popa_cota4;
+    }
+    #main {
+        font-size: 10vw;
+        font-family: 'Courier New', Courier, monospace;
+		font-weight: 700;
+        text-transform: uppercase;
+        animation-name: rainbow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes popa_cota1 {
+        0% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+        12.5% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+        }
+        25% {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            transform: rotate(90deg);
+        }
+        37.5% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 50%;
+        }
+        50% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 0;
+            transform: rotate(0deg);
+        }
+        62.5% {
+            top: 0;
+            right: 50%;
+            bottom: 50%;
+            left: 0;
+        }
+        75% {
+            top: 0;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+        87.5% {
+            top: 50%;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+        }
+        100% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-180deg);
+        }
+    }
+    @keyframes popa_cota2 {
+        0% {
+            top: 0;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+            transform: rotate(270deg);
+        }
+        12.5% {
+            top: 50%;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+        }
+        25% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+        37.5% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+        }
+        50% {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            transform: rotate(90deg);
+        }
+        62.5% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 50%;
+        }
+        75% {
+            top: 0;
+            right: 0%;
+            bottom: 50%;
+            left: 0;
+            transform: rotate(0deg);
+        }
+        87.5% {
+            top: 0;
+            right: 50%;
+            bottom: 50%;
+            left: 0;
+        }
+        100% {
+            top: 0;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+    }
+    @keyframes popa_cota3 {
+        0% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 0;
+            transform: rotate(0deg);
+        }
+        12.5% {
+            top: 0;
+            right: 50%;
+            bottom: 50%;
+            left: 0;
+        }
+        25% {
+            top: 0;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+        37.5% {
+            top: 50%;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+        }
+        50% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-180deg);
+        }
+        62.5% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+        }
+        75% {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            transform: rotate(-270deg);
+        }
+        87.5% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 50%;
+        }
+        100% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 0;
+            transform: rotate(-360deg);
+        }
+    }
+    @keyframes popa_cota4 {
+        0% {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            transform: rotate(90deg);        
+        }
+        12.5% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 50%;
+        }
+        25% {
+            top: 0;
+            right: 0;
+            bottom: 50%;
+            left: 0;
+            transform: rotate(0deg);
+        }
+        37.5% {
+            top: 0;
+            right: 50%;
+            bottom: 50%;
+            left: 0;
+        }
+        50% {
+            top: 0;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+        62.5% {
+            top: 50%;
+            right: 50%;
+            bottom: 0;
+            left: 0;
+        }
+        75% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-180deg);
+        }
+        87.5% {
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+        }
+        100% {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            transform: rotate(-270deg);
+        }
+    }
+    @keyframes rainbow {
+    	0% {
+    		color: yellow;
+    	}
+    	20% {
+    		color: purple;
+    	}
+    	40% {
+    		color: magenta;
+    	}
+    	60% {
+    		color: blue;
+    	}
+    	80% {
+    		color: lime;
+    	}
+		100% {
+    		color: yellow;
+    	}
+    }
+	@keyframes epileptic {
+    	0% {
+    		color: black;
+    	}
+    	10% {
+    		color: white;
+    	}
+    	20% {
+    		color: red;
+    	}
+    	30% {
+    		color: black;
+    	}
+    	40% {
+    		color: white;
+    	}
+    	50% {
+    		color: limegreen;
+    	}
+		60% {
+    		color: white;
+    	}
+    	70% {
+    		color: deeppink;
+    	}
+    	80% {
+    		color: black;
+    	}
+    	90% {
+    		color: white;
+    	}
+    	100% {
+    		color: cyan;
+    	}
+    }
+    
+</style>
+</html>
